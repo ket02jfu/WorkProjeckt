@@ -1,0 +1,44 @@
+/*Media for header*/
+
+@media (max-width: 768px){
+    .toggel-btn span {
+        display: block;
+        
+    }
+    #pages{
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+    .buttons{
+        font-size: 17px;
+        padding: 7px 0;
+        width: 50%;
+    }
+    #items-container{
+        width: 300px;
+        flex-direction: column;
+    }
+    .items{
+        width: 100%;
+    }
+
+}
+@media (max-width:545px) {
+    .test-container{
+        width: 320px;
+    }
+    .pagename{
+        font-size: 22px;
+    }
+    .pagename1{
+        font-size: 22px;
+    }
+}
+@media (max-width: 350px){
+    .pagename{
+        font-size: 18px;
+    }
+    .pagename1{
+        font-size: 18px;
+    }
+}

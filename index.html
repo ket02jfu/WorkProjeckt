@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,500&display=swap"
+        rel="stylesheet">
+
+    <script src="code.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main-container">
+
+
+
+        <header id="header-container">
+            <div id="pages">
+                <div id="btns-div">
+                    <a href="#Anket" onclick="slowScroll('#anketa-container')" class="buttons">Личная информация</a>
+                    <a href="#Experience" onclick="slowScroll('#experience-container')" class="buttons">Опыт</a>
+                    <a href="#YourLevel" class="buttons" onclick="slowScroll('#lvl-container')" class="buttons">JavaScript</a>
+                    <a href="#AboutMe" class="buttons" onclick="slowScroll('#AboutMe')" class="buttons">О себе</a>
+                </div>
+                <div class="toggel-btn" onclick="myFunction();">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+
+
+        <div id="anketa-container">
+            <div id="anket-name">
+                Анкета
+            </div>
+            <div class="photo">
+                <img src="./img/anket.png" alt="1">
+            </div>
+            <div class="pagename">
+                Личная информация
+            </div>
+            <div class="test">
+                <div class="test-container">
+                    <input type="text" class="textclass" placeholder="ФИО">
+                    <select id="year">
+                        <option selected>Год рождения</option>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>Other</option>
+                    </select>
+                    <input type="text" class="textclass" placeholder="Место проживания">
+                    <input type="text" class="textclass" placeholder="Skype">
+                    <input type="text" class="textclass" placeholder="E-mail">
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div id="experience-container">
+            <div class="photo">
+                <img src="./img/exp.png" alt="1">
+            </div>
+            <div class="pagename">
+                Расскажите о своем опыте
+            </div>
+            <div id="cont-i">
+                <div id="items-container">
+
+                    <div class="items">
+                        <div class="checkBoxDiv">
+                            <input type="checkbox">
+                            <p>БЭМ/OOCSS</p>
+                        </div>
+                        <div class="checkBoxDiv">
+                            <input type="checkbox">
+                            <p>Stylus/LESS/SASS</p>
+                        </div>
+                        <div class="checkBoxDiv">
+                            <input type="checkbox">
+                            <p>Работаю с SVG</p>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="checkBoxDiv">
+                            <input type="checkbox">
+                            <p>Верстаю семантично</p>
+                        </div>
+                        <div class="checkBoxDiv">
+                            <input type="checkbox">
+                            <p>ES2015/ES2016</p>
+                        </div>
+                        <div class="checkBoxDiv">
+                            <input type="checkbox">
+                            <p>Gulp/GRUNT</p>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="checkBoxDiv">
+                            <input type="checkbox">
+                            <p>Webpack</p>
+                        </div>
+                        <div class="checkBoxDiv">
+                            <input type="checkbox">
+                            <p>jQuery</p>
+                        </div>
+                        <div class="checkBoxDiv">
+                            <input type="checkbox">
+                            <p>Использую Git</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="lvl-container">
+            <div class="photo">
+                <img src="./img/js.png" alt="1">
+            </div>
+            <div class="pagename">
+                Уровень владения JavaScript
+            </div>
+            <div id = "slider">
+                <img src="./img/line.png" alt="" >
+                
+                
+            </div>
+        </div>
+
+
+        <div id="AboutMe">
+            <div class="photo">
+                <img src="./img/aboutMe.png" alt="1">
+            </div>
+            <div class="pagename1">
+                Расскажите о себе
+            </div>
+            <div id="infoAboutMe">
+                <p>Напишите несколько предложений, чем привлекла наша вакансия <br> и что вы ожидаете от работы у нас.</p>
+            </div>
+            <div id="textInfo">
+                <input type="text" placeholder="Понравилась тем, что...">
+            </div>
+            
+            <button>Готово</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
